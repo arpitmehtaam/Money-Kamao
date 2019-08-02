@@ -1,0 +1,433 @@
+<doctype! html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+var i="01"
+function on(i) {
+  document.getElementById(i).style.display = "block";
+}
+
+function off(i) {
+  document.getElementById(i).style.display = "none";
+}
+
+
+</script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.header {
+  background-image:url("cash6.jpg");
+height:700px;
+  padding: 30px;
+  text-align: center;
+
+  font-size: 35px;
+  color: black;
+
+  text-shadow: 3px 2px grey;
+
+}
+.iconbar {
+  position: fixed;
+ display:block;
+  
+}
+
+/* Style the icon bar links */
+.iconbar a {
+ 
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.iconbar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  display:none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  overflow-x:hidden;
+  overflow-y:scroll; /* Add a pointer on hover */
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  float: left;
+  width: 32.3%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+padding:10px;
+margin: 5px 5px 5px 10px;
+}
+
+.About {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+margin: 5px 5px 5px 10px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.parallax { 
+  /* The image used */
+  background-image: url("cash4.jpg");
+
+  /* Set a specific height */
+  height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no repeat;
+  background-size: cover;
+}
+.logo {
+height:35px;
+width:35px;
+}
+.container {
+background-color:white;
+width:1000px;
+}
+h1 {
+color:black;
+
+padding:10px;
+text-align:center;
+text-decoration:underline;}
+
+.text {
+color:black;
+padding:20px;
+text-align:center;
+text-size:30px;
+overflow-y:scroll;}
+
+
+.overlaytext {
+color:white;
+padding:20px;
+text-align:center;
+text-size:30px;
+overflow:scroll;
+top:20%;
+overflow-x:hidden;
+overflow-y:scroll;}
+
+hr { color:white;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+padding:10px;
+}
+</style>
+</head>
+<body style="background-color:white">
+<div class="header"><h1><br><br><br><br><br><br>Money Kamao</h1></div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="#"><img src="logo.png" class="logo" alt="Money Kamao"> Money Kamao <div class="spinner-grow text-success-sm"></div> </a>
+   <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#aboutus">About Us</a>
+    </li>
+    
+    
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Courses
+      </a>
+      <div class="dropdown-menu">
+        
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+<li class="nav-item">
+      <a class="nav-link" href="#">Jobs and Internship</a>
+
+    </li>
+<li class="nav-item">
+      <a class="nav-link" href="#">Save Money</a>
+
+    </li>
+<li class="nav-item">
+      <a class="nav-link" href="#">Contact us</a>
+
+    </li>
+  </ul>
+  
+</nav>
+<div>
+ <h1>  About Us</h1><hr>
+ <p class="text" id="aboutus"> 
+
+Hello there!!! Moneykamao is the platform which provide its users to make money just sitting right through their home.It brings most of the ways of earning money on one platform so you don’t need to search out the whole internet in order to find ways.And the best part is This site is FREE OF COST!!!.so you don’t need to pay us at all.And we will make sure our site will improve with new methods as the time pass by.
+<br>
+ENJOY MAKING MONEY!!!..
+</p>
+
+<hr>
+<div style="background-color:white">
+<div class="parallax"></div>
+<div class="overlay" id="01" onclick="off(id)">
+   <div class="overlaytext" ><br><br><br><br>
+ What is Affiliate Marketing?<br>
+Wikipedia defines Affiliate Marketing as a marketing practice where a business rewards one or more affiliates for each sale made by the affiliate.
+The major thing in this business is that you get rewarded by helping to promote the product or service of a business. For instance, if you sign up for the affiliate program of Tips and Ticks HQ and promote its products, you get a certain percentage which is your commission whenever you send any visitor to the site and they make a purchase.
+Affiliate marketing can be said to be one of the cheapest and quickest ways to make money online since it involves no products creation of any kind. All you need to do is to link up a buyer and seller; once the sale is made, you earn your commission.
+How to do Affiliate Marketing?
+The first thing to do is to join an affiliate program then select the products you intend to sell. The owners of the products would provide you with an affiliate code you can use for referring traffic to the main site. Also, you will be offered banners, text links and several forms of creative copies in which you just copy and paste the code on your own site to refer traffic. Any interested customer who clicks on the links from your website will be redirected to the main site where the product is sold and if they pay for the product or subscribe to a program/service and indicate you as the referral, you get a certain percentage as commission.
+Your performance can be tracked by sellers through your affiliate ID and other affiliate software used. You also possess a real-time access to all commission and sales stats. Also, in making commission, you don’t always need to sell products because various affiliate programs employ different terms of payment like:
+Pay Per Click (PPC) – You make money online depending on the number of visitors redirected by you to the website of the Merchant from your own site, whether you make a sale or not.
+Pay Per Sale (PPS) – The merchant pays you a certain percentage of the price of sales made after a purchase is completed.
+Pay Per Lead  (PPL) – Once a visitor provides their contact info on the merchant site, you instantly make money online.
+
+affiliate marketing
+Why should you consider being an Affiliate Marketer? 
+This business is known to be the fastest growing and best marketing techniques on the internet. Enlisted below are few reasons to consider this to earn from affiliate marketing:
+Free of Cost: Affiliate marketing involves zero investment. Marketing any product online is relatively inexpensive, so the business functioning is cost effective since it was created by someone else. Also, you don’t need to hire anyone or have an office.
+No customer support: This obviously is not necessary since you aren’t the person who created the products.
+No shipping or storage: This is certainly not your headache because it would be handled by the seller if needed.
+Passive income: If you have a normal daytime job, you can continue earning a fixed income. On the other hand, you earn  from affiliate marketing steadily and even when you are not online at times.
+Work comfortably from your home: If you earn from affiliate marketing regularly, you would have no need to go to work every day. You have the chance to work at home.
+Global market: You can reach a lot of people around the world and earn from affiliate marketing.
+
+How to Make Money Online in India from Affiliate Marketing?
+By now, you should be convinced that you can make money online from affiliate marketing as a passive source of income and must be wondering how to start. As a matter of fact, India is emerging as the largest digital marketing hub and is giving a tough competition to the digitally developed nations.
+But you should understand that you won’t become instantly rich by selling product. This type of business is highly competitive because there are many other people into it. How to make money online in India can be simply answered by following these hacks to gain success in the field: through affiliate marketing, you need to understand the market, know how products are promoted, and understand how it works.
+
+earn money from affiliate marketing
+7 Tips to Earn from Affiliate Marketing
+Here are a few tips that can help you to make money online using affiliate marketing:
+1. Select a few good products
+Most newbies in affiliate marketing make the mistake of registering with too many affiliate programs and try promoting everything they see. If this is the path you are treading, then it will overwhelm you and you won’t promote the products properly. Take time to understand the needs in the market and search for products that will go well with your site’s topic.
+
+affiliate marketing-promote products
+2. Employ various sources of traffic to promote services or products
+Another mistake affiliate marketers make is that they run ads just on their own sites. This isn’t wrong but there are just so many other sources of traffic that you have the chance to use for promotion all at the same time. The more the traffic that your sales page gets, the higher are your chances of making money online.
+Google AdWords is a good way to drive traffic to your sales page. All you must do is run an ad in your AdWords account then use the associated link. You will need to measure your conversions regularly to see if the cost of the campaign is less than its profit to keep it running.
+3. Your Campaign must be Tested, Measured and Tracked
+Using several strategies for product promotion is a very good idea because it gives you the opportunity to know which of them works better. You can do split testing and measure each campaign’s performance before taking the appropriate action. Changing a couple things would raise your profit. Banner ads should be placed on different areas on the pages of your site because there are some strategic points that will catch your reader’s attention.
+The basic statistics of different affiliate programs are shown and you might need it for your campaign but you can still use a conversion tracking software of your own as well.
+4. Find out how much the product is desired
+
+affiliate marketing-promote products
+To make money from affiliate marketing, you need to ascertain that the product has a high demand. No matter how much efforts you make, you might make little or no sales, it totally depends on the demand of the product. You need to know if it is what your audience really needs. If you manage to get a reasonable amount of traffic on your site, then you can run a small online survey to get input from visitors.
+
+
+5. You should be current with new techniques and methods
+This is necessary because of the competitive nature of affiliate marketing and to be able to make money online. Daily, new techniques and methods are developed; you wouldn’t want to be left behind while new trends take over.
+6. Look for and select the right merchant
+When promoting a product, you are also promoting the person or organization that owns the product. This should be the first thing to know before selecting the product you are promoting. You surely don’t want your clients to be unhappy after purchasing the product. Trust me; they will never come back to your site again to purchase anything! This is because you have dented your credibility. Normally, any company or website with good customer service is bound to have happy customers.
+7. Use the necessary tools
+
+make money with affiliate marketing
+To boost your chances to earn from affiliate marketing, various sites have various tools to make your campaign more efficient. There are a lot of tools which would be helpful out there. For example, if you use a WordPress site, then you should think of getting a plugin that is like the Affiliate Link Manager. Online money making is eased with the usage of right tools. 
+
+
+Developing your Affiliate Marketing Business
+When you start a business, you would want to make sure it lasts long. To keep your business flourishing, you need to do a lot of things. To make money online from affiliate marking needs to be strategized to continue the earnings. If you want to your business to rise, consider the following:
+1. Study and learn from other people in the business
+This is the easiest way to gain experience because you get exposed to other affiliates. You can meet people by joining a discussion forum or an online community. The good thing is that they are free to join and you get very good advice there. Examples of such online communities are ABestWeb, Digital Point, and Warrior Forum. Apart from getting advice from more experienced affiliates, you get the chance to network with other marketers.
+2. Create and build relationships
+There is so much work in affiliate marketing, therefore, you need to be patient before making money online. Traffic is driven to the website of the marketer through affiliate marketing programs but as the marketer you have the responsibility of creating and maintaining relationships with partners.
+
+3. Get the targeted traffic
+It is one thing to get people to visit your site but it is another thing to make money online by conversion of leads. There are four main methods to attract potential customers:
+Free Advertising: You get to place ads and links on free websites to drive traffic to your website. Examples of such websites are US Free Ads and Craigslist. This method allows both you and the free site earn from affiliate marketing when someone clicks on your ads.
+Paid Advertising: In this method, you will need a combination of graphics, ad, and link that is highly-clickable. With the use of PPC ads, you make money online whether the visitor makes a purchase or not. Google AdSense makes it quick and easy.
+Email Marketing: This method involves the marketer to embed a form for email subscription for visitors on the site. You get to have the visitor’s name and email which would help you maintain a long-lasting relationship and the lead gets a regular newsletter from you.
+Article Marketing: A higher ranking in search engine results are sought in this method to generate higher number of leads. Websites like Ezine Articles are used in publishing articles having a unique ‘resource box’, eventually when other website managers and bloggers republish the article, the marketer earns a higher rank in the search engine.
+4. Make a PPC Ad
+PPC (Pay Per Click) ads are the main ingredients of affiliate marketing. So you need to write a good ad to generate sales and incerase online money making. 
+Some criteria for a good PPC Ad are:
+It should address a problem consumers normally encounter and attract them with a solution.
+It must have a certain strong keyword that will drive traffic.
+Keywords are reflected on the main landing page.
+Whip up a call to action to give direction to the pitch you have created. This will be accomplished by clicking the link.
+5. Pursue quality over quantity
+Having several affiliates is not a guarantee of making money online. Studies show that a successful affiliate marketing campaign requires you to get the right collaborations that would drive traffic to your site. Whether these associates are big or small sites or even a combination of both, you must create and maintain strong relationships with the affiliates.
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="card">
+  <img src="cash1.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="About">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+<div class="card">
+  <img src="cash1.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="About">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+<div class="card">
+  <img src="cash1.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="About">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+<div class="card">
+  <img src="cash1.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="About">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+<div class="card">
+  <img src="cash1.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>method </h1>
+  <p class="About">FREE Course</p>
+  <p>Some text about the Course..</p>
+  <p><button id="01" onclick="on(id)">Let's Start</button></p>
+
+</div>
+<div class="card">
+  <img src="cash1.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="About">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+<div class="card">
+  <img src="cash1.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="About">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+<div class="card">
+  <img src="cash1.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="About">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+<div class="card">
+  <img src="cash1.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="About">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+<div class="card">
+  <img src="cash1.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="About">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+<div class="card">
+  <img src="cash1.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>method </h1>
+  <p class="About">FREE Course</p>
+  <p>Some text about the Course..</p>
+  <p><button id="01" onclick="on(id)">Let's Start</button></p>
+
+</div>
+<div class="card">
+  <img src="cash1.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="About">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+<h2 id="jobandsavings">Jobs and Savings</h2>
+<br>
+<p> text area</p>
+<hr>
+<h2 id="savings">Savings</h2>
+<p> Text Area</p>
+<footer>
+
+
+</footer>
+<div class="iconbar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+
+</div>
+
+</body>
+</html>

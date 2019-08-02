@@ -1,0 +1,891 @@
+<doctype! html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+var i
+function on(i) {
+  document.getElementById(i).style.display = "block";
+}
+
+function off(i) {
+  document.getElementById(i).style.display = "none";
+}
+
+
+</script>
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.special {
+  
+  
+ 
+}
+
+
+
+.header {
+  background-image:url("cash6.jpg");
+height:700px;
+  padding: 30px;
+  text-align: center;
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 35px;
+  color: black;
+ 
+
+  text-shadow: 3px 2px grey;
+
+}
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the icon bar links */
+#iconbar {
+ 
+  
+  text-align: center;
+  padding: 6px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+#iconbar :hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  display:none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  overflow-x:hidden;
+  overflow-y:scroll;
+
+ /* Add a pointer on hover */
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  float: left;
+  width: 32.3%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+padding:10px;
+margin: 5px 5px 5px 10px;
+-webkit-animation: cardmove 3s infinite; /* Safari 4.0 - 8.0 */
+  animation: cardmove 3s infinite;
+}
+
+.About {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+margin: 5px 5px 5px 10px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.parallax { 
+  /* The image used */
+  background-image: url("cash4.jpg");
+
+  /* Set a specific height */
+  height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no repeat;
+  background-size: cover;
+}
+h2 {
+ text-align: center;
+color:white;
+}
+.logo {
+height:35px;
+width:35px;
+}
+.container {
+background-color:white;
+width:1000px;
+}
+h1 {
+color:black;
+
+padding:10px;
+text-align:center;
+}
+
+.text {
+color:black;
+padding:20px;
+text-align:center;
+text-size:30px;
+overflow-y:scroll;}
+
+
+.overlaytext {
+color:white;
+padding:20px;
+text-align:center;
+text-size:30px;
+overflow:scroll;
+top:20%;
+overflow-x:hidden;
+overflow-y:scroll;}
+
+
+span {
+  background-color: #f18973;
+}
+
+.major {
+background-color:black;
+padding:5px;
+ text-align: center;
+
+background-attachment: fixed;
+  background-position: center;
+  background-repeat: no repeat;
+  background-size: cover;
+box-shadow: 0 4px 8px 0 rgba(rgb(0, 255, 255),.3);
+
+}
+.footer {
+  background-color:rgb(105, 105, 105);
+  border:2px 0 0 0 rgb(0,255,255);
+  text-align: center;
+  padding: 10px;
+}
+
+.major p{
+color:white;
+}
+
+
+.special {
+border-width:1px 2px 2px 1px;
+border-color:black;
+padding:4px;
+border-style: outset;
+
+}
+</style>
+</head>
+<body style="background-color:white">
+<div class="header"><h1 class="bg-text">Money Kamao</h1></div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="#"><img src="logo.png" class="logo" alt="Money Kamao"> Money Kamao <div class="spinner-grow text-success-sm"></div> </a>
+   <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#aboutus">About Us</a>
+    </li>
+    
+    
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Courses
+      </a>
+      <div class="dropdown-menu">
+        
+        <a href="#c01" class="dropdown-item" >Stock Market</a>
+        <a href="#c02" class="dropdown-item" >Domains buy and sell</a>
+        <a href="#c03" class="dropdown-item" >Youtube</a>
+        <a href="#c04" class="dropdown-item" >Affiliate Marketing</a>
+        <a href="#c05" class="dropdown-item" >Online Marketing </a>
+        <a href="#c06" class="dropdown-item" >Freelancing</a>
+        <a href="#c07" class="dropdown-item" >Clixaddo and Referral Program</a>
+        <a href="#c08" class="dropdown-item" >Tutor Students</a>
+        <a href="#c09" class="dropdown-item" >Websites</a>
+        <a href="#c10" class="dropdown-item" >Make money Online</a>
+       
+      </div>
+    </li>
+<li class="nav-item">
+      <a class="nav-link" href="#investment">Investment</a>
+
+    </li>
+<li class="nav-item">
+      <a class="nav-link" href="#savemoney">Save Money</a>
+
+    </li>
+<li class="nav-item">
+      <a class="nav-link" href="#finance">Finance</a>
+
+    </li>
+<li class="nav-item">
+      <a class="nav-link" href="#contactus">Contact us</a>
+
+    </li>
+  </ul>
+  
+</nav>
+<div>
+ <h1>  About Us</h1><hr>
+ <p class="text" id="aboutus"> 
+
+Hello there!!! Moneykamao is the platform which provide its users to make money just sitting right through their home.It brings most of the ways of earning money on one platform so you don’t need to search out the whole internet in order to find ways.And the best part is This site is FREE OF COST!!!.so you don’t need to pay us at all.And we will make sure our site will improve with new methods as the time pass by.
+<br>
+ENJOY MAKING MONEY!!!..
+</p>
+
+<hr>
+<div style="background-color:white">
+<div class="parallax"></div>
+<div class="overlay" id="04" onclick="off(id)">
+   <div class="overlaytext" ><br><br><br><br>
+ What is Affiliate Marketing?<br>
+Wikipedia defines Affiliate Marketing as a marketing practice where a business rewards one or more affiliates for each sale made by the affiliate.
+The major thing in this business is that you get rewarded by helping to promote the product or service of a business. For instance, if you sign up for the affiliate program of Tips and Ticks HQ and promote its products, you get a certain percentage which is your commission whenever you send any visitor to the site and they make a purchase.
+Affiliate marketing can be said to be one of the cheapest and quickest ways to make money online since it involves no products creation of any kind. All you need to do is to link up a buyer and seller; once the sale is made, you earn your commission.
+How to do Affiliate Marketing?
+The first thing to do is to join an affiliate program then select the products you intend to sell. The owners of the products would provide you with an affiliate code you can use for referring traffic to the main site. Also, you will be offered banners, text links and several forms of creative copies in which you just copy and paste the code on your own site to refer traffic. Any interested customer who clicks on the links from your website will be redirected to the main site where the product is sold and if they pay for the product or subscribe to a program/service and indicate you as the referral, you get a certain percentage as commission.
+Your performance can be tracked by sellers through your affiliate ID and other affiliate software used. You also possess a real-time access to all commission and sales stats. Also, in making commission, you don’t always need to sell products because various affiliate programs employ different terms of payment like:
+Pay Per Click (PPC) – You make money online depending on the number of visitors redirected by you to the website of the Merchant from your own site, whether you make a sale or not.
+Pay Per Sale (PPS) – The merchant pays you a certain percentage of the price of sales made after a purchase is completed.
+Pay Per Lead  (PPL) – Once a visitor provides their contact info on the merchant site, you instantly make money online.
+
+affiliate marketing
+Why should you consider being an Affiliate Marketer? 
+This business is known to be the fastest growing and best marketing techniques on the internet. Enlisted below are few reasons to consider this to earn from affiliate marketing:
+Free of Cost: Affiliate marketing involves zero investment. Marketing any product online is relatively inexpensive, so the business functioning is cost effective since it was created by someone else. Also, you don’t need to hire anyone or have an office.
+No customer support: This obviously is not necessary since you aren’t the person who created the products.
+No shipping or storage: This is certainly not your headache because it would be handled by the seller if needed.
+Passive income: If you have a normal daytime job, you can continue earning a fixed income. On the other hand, you earn  from affiliate marketing steadily and even when you are not online at times.
+Work comfortably from your home: If you earn from affiliate marketing regularly, you would have no need to go to work every day. You have the chance to work at home.
+Global market: You can reach a lot of people around the world and earn from affiliate marketing.
+
+How to Make Money Online in India from Affiliate Marketing?
+By now, you should be convinced that you can make money online from affiliate marketing as a passive source of income and must be wondering how to start. As a matter of fact, India is emerging as the largest digital marketing hub and is giving a tough competition to the digitally developed nations.
+But you should understand that you won’t become instantly rich by selling product. This type of business is highly competitive because there are many other people into it. How to make money online in India can be simply answered by following these hacks to gain success in the field: through affiliate marketing, you need to understand the market, know how products are promoted, and understand how it works.
+
+earn money from affiliate marketing
+7 Tips to Earn from Affiliate Marketing
+Here are a few tips that can help you to make money online using affiliate marketing:
+1. Select a few good products
+Most newbies in affiliate marketing make the mistake of registering with too many affiliate programs and try promoting everything they see. If this is the path you are treading, then it will overwhelm you and you won’t promote the products properly. Take time to understand the needs in the market and search for products that will go well with your site’s topic.
+
+affiliate marketing-promote products
+2. Employ various sources of traffic to promote services or products
+Another mistake affiliate marketers make is that they run ads just on their own sites. This isn’t wrong but there are just so many other sources of traffic that you have the chance to use for promotion all at the same time. The more the traffic that your sales page gets, the higher are your chances of making money online.
+Google AdWords is a good way to drive traffic to your sales page. All you must do is run an ad in your AdWords account then use the associated link. You will need to measure your conversions regularly to see if the cost of the campaign is less than its profit to keep it running.
+3. Your Campaign must be Tested, Measured and Tracked
+Using several strategies for product promotion is a very good idea because it gives you the opportunity to know which of them works better. You can do split testing and measure each campaign’s performance before taking the appropriate action. Changing a couple things would raise your profit. Banner ads should be placed on different areas on the pages of your site because there are some strategic points that will catch your reader’s attention.
+The basic statistics of different affiliate programs are shown and you might need it for your campaign but you can still use a conversion tracking software of your own as well.
+4. Find out how much the product is desired
+
+affiliate marketing-promote products
+To make money from affiliate marketing, you need to ascertain that the product has a high demand. No matter how much efforts you make, you might make little or no sales, it totally depends on the demand of the product. You need to know if it is what your audience really needs. If you manage to get a reasonable amount of traffic on your site, then you can run a small online survey to get input from visitors.
+
+
+5. You should be current with new techniques and methods
+This is necessary because of the competitive nature of affiliate marketing and to be able to make money online. Daily, new techniques and methods are developed; you wouldn’t want to be left behind while new trends take over.
+6. Look for and select the right merchant
+When promoting a product, you are also promoting the person or organization that owns the product. This should be the first thing to know before selecting the product you are promoting. You surely don’t want your clients to be unhappy after purchasing the product. Trust me; they will never come back to your site again to purchase anything! This is because you have dented your credibility. Normally, any company or website with good customer service is bound to have happy customers.
+7. Use the necessary tools
+
+make money with affiliate marketing
+To boost your chances to earn from affiliate marketing, various sites have various tools to make your campaign more efficient. There are a lot of tools which would be helpful out there. For example, if you use a WordPress site, then you should think of getting a plugin that is like the Affiliate Link Manager. Online money making is eased with the usage of right tools. 
+
+
+Developing your Affiliate Marketing Business
+When you start a business, you would want to make sure it lasts long. To keep your business flourishing, you need to do a lot of things. To make money online from affiliate marking needs to be strategized to continue the earnings. If you want to your business to rise, consider the following:
+1. Study and learn from other people in the business
+This is the easiest way to gain experience because you get exposed to other affiliates. You can meet people by joining a discussion forum or an online community. The good thing is that they are free to join and you get very good advice there. Examples of such online communities are ABestWeb, Digital Point, and Warrior Forum. Apart from getting advice from more experienced affiliates, you get the chance to network with other marketers.
+2. Create and build relationships
+There is so much work in affiliate marketing, therefore, you need to be patient before making money online. Traffic is driven to the website of the marketer through affiliate marketing programs but as the marketer you have the responsibility of creating and maintaining relationships with partners.
+
+3. Get the targeted traffic
+It is one thing to get people to visit your site but it is another thing to make money online by conversion of leads. There are four main methods to attract potential customers:
+Free Advertising: You get to place ads and links on free websites to drive traffic to your website. Examples of such websites are US Free Ads and Craigslist. This method allows both you and the free site earn from affiliate marketing when someone clicks on your ads.
+Paid Advertising: In this method, you will need a combination of graphics, ad, and link that is highly-clickable. With the use of PPC ads, you make money online whether the visitor makes a purchase or not. Google AdSense makes it quick and easy.
+Email Marketing: This method involves the marketer to embed a form for email subscription for visitors on the site. You get to have the visitor’s name and email which would help you maintain a long-lasting relationship and the lead gets a regular newsletter from you.
+Article Marketing: A higher ranking in search engine results are sought in this method to generate higher number of leads. Websites like Ezine Articles are used in publishing articles having a unique ‘resource box’, eventually when other website managers and bloggers republish the article, the marketer earns a higher rank in the search engine.
+4. Make a PPC Ad
+PPC (Pay Per Click) ads are the main ingredients of affiliate marketing. So you need to write a good ad to generate sales and incerase online money making. 
+Some criteria for a good PPC Ad are:
+It should address a problem consumers normally encounter and attract them with a solution.
+It must have a certain strong keyword that will drive traffic.
+Keywords are reflected on the main landing page.
+Whip up a call to action to give direction to the pitch you have created. This will be accomplished by clicking the link.
+5. Pursue quality over quantity
+Having several affiliates is not a guarantee of making money online. Studies show that a successful affiliate marketing campaign requires you to get the right collaborations that would drive traffic to your site. Whether these associates are big or small sites or even a combination of both, you must create and maintain strong relationships with the affiliates.
+</div></div>
+
+<div class="overlay" id="01" onclick="off(id)">
+   <div class="overlaytext" ><br><br><br><br>
+</div></div>
+<div class="overlay" id="02" onclick="off(id)">
+   <div class="overlaytext" ><br><br><br><br><h1>
+HOW TO BUY AND SELL YOUR DOMAIN WITH HIGH PROFIT?
+</h1>
+<h2>
+What is Domain name?
+</h2>
+<p>
+Domain names are used to identify one or more IP addresses. For example, the domain name microsoft.com represents about a dozen IP addresses. Domain names are used in URLs to identify particular Web pages. For example,Moneykamoa.com,facebook.com
+</P>
+<h2> 
+How to Buy a Domain Name?
+<h2/>
+<p>
+<br>
+1.Choose a reliable domain registrar(like Godaddy.com)
+</br>
+<br>
+2.Find a domain availability checker tool.
+</br>
+<br>
+3.Run a domain name search.
+</br>
+<br>
+4.Pick the best available option.
+</br>
+<br>
+5.Finalize your order and complete the domain registration.
+</br>
+<br>
+6.Verify the ownership of your new domain.
+</br>
+</p>
+<h2>
+How to choose a Domain Name?
+</h2>
+<h2>
+7 Ways To Choose A Best Domain Name:
+</h2>
+<h3>
+1.Make it easy to type:
+</h3>
+<p>
+Finding a domain name that’s easy to type is critical to online success.Long and confusing names are harder to remember and easier to mistype.The more unique you can make your domain name (while keeping it clear and concise), the more memorable it will be.Avoid numbers and special characters because they’re confusing when spoken aloud.
+</p>
+<h3>
+2. Use keywords:
+</h3>
+<p>
+Try using keywords that describe your business and the services you offer. For example, if you’re a glass replacement business, you may want to register GlassRepair.com or GlassReplacement.com.
+
+Include the keywords that people enter when searching for your products or services.
+ 
+
+It helps improve your rank on search engines (which increases traffic) and just makes more sense to your customers.
+</p>
+<h3>
+3. Be memorable:
+</h3>
+<p>
+There are millions of registered domain names, so having a domain that’s catchy and memorable is essential. Once you’ve come up with a name, share it with close friends to make sure it sounds appealing and makes sense to others.
+
+Quick solution: Got a great idea for a domain? Register your name today and put a website out there before someone else beats you to it.
+</p>
+<h3>
+4. Research it:
+</h3>
+<p>
+Make sure the name you’ve selected isn’t trademarked, copyrighted or being used by another company. It could result in a huge legal mess that could cost you a fortune, as well as your domain!
+<h3>
+For Searching Domain which is Available or not visit:
+</h3>
+<p>
+1.leandomainsearch.com 
+2.bustaname.com
+3.bluehost.com
+4.justdropped.com
+5.redhotdomainnames.com
+6.Godaddy.com
+</p>
+<h3>
+5. Use an appropriate domain name extension:
+</h3>
+<p>
+Extensions are suffixes, such as .com or .net, at the end of web addresses. These can have specific uses, so make sure to choose one that works for your business. The .com domain extension is far and away the most popular, but it can be tough to get a short and memorable .com domain name because it’s been around for so long.
+
+A bevy of new generic top-level domains — like .photography, .nyc and .guru — offer a great opportunity to register short and highly relevant names. And here are some other top extensions and how they’re often used:
+
+.co : an abbreviation for company, commerce, and community.
+.info : informational sites.
+.net : technical, Internet infrastructure sites.
+.org : non-commercial organizations and nonprofits.
+.biz : business or commercial use, like e-commerce sites.
+.me : blogs, resumes or personal sites.
+
+Pro tip: You don’t need to build a website for every domain. Just forward any additional domains to your primary website.
+</p>
+<h3>
+6. Protect and build your brand:
+</h3>
+<p>
+To protect your brand, you should purchase various domain extensions, as well as misspelled versions of your domain name. This prevents competitors from registering other versions and ensures your customers are directed to your website, even if they mistype it.
+</p>
+<h3>
+7. Act fast:
+</h3>
+<p>
+Domain names sell quickly. Thankfully, they’re also inexpensive, so register your favorite domain names as soon as possible. If you’re having trouble finding an available name, domain registrars like GoDaddy will suggest alternate names during your domain search to help you find the perfect domain name.
+</p>
+<h2>
+How To Sell Your Domain Name In Best Price?
+</h2>
+<h3>
+1. Determine the Value Of Your Domain:
+</h3>
+<p>
+The first thing you’ll need to do is properly price your domain. A lot of people end up overpricing their domains and wonder why they never have any interest. Just because you’ve owned a domain for a while doesn’t mean that it has any inherent value.
+There are a variety of online estimation tools you can use, but these don’t tend to give very accurate quotes. You can use them as a general indicator, but not as a true measure of value.
+</p>
+<h3>
+2. Decide How You’d Like to Sell:
+</h3>
+<p>
+With a better understanding of what your domain is worth, it’s time to start looking for buyers. You’re going to have a few different ways to find buyers for your domain.
+<p>
+<h3>
+Some of the most popular sites are shown below:
+</h3>
+<p>
+1. Godaddy
+2. eBay
+3. Afternic
+4. Flippa
+5. Sedo.com
+</p>
+<h3>
+3. Make sure your contact information is public on the WHOIS directory:
+</h3>
+<p>
+Most people don’t want their contact information publicly listed online. However, when you’re ready to sell a domain, this is the time you DO want your contact information available.
+
+Let’s say someone searches for a domain name to purchase, but you already own it. If they can find your contact information in the WHOIS directory, they can contact you directly and offer to buy the domain name from you.
+</p>
+<h3>
+4. Prepare Your Domain Listing:
+</h3>
+<p>
+Once you’ve chosen your marketplace it’s time to optimize your listing. A lot of sellers just upload their URL and call it a day. However, you can maximize your chances of selling your domain by making it more attractive.
+
+For example, does your domain have any existing traffic? Does the domain have considerable age? Does your domain have any existing authority?
+
+By highlighting the current and potential value of the domain you can help to justify the price and make it more attractive to buyers.
+</p>
+<h3>
+5. Use an Escrow Service to Receive Payment:
+</h3>
+<p>
+One way to safeguarding the selling of your domain is to use an escrow service. This will help you avoid being scammed or tricked by a potential buyer.
+
+An escrow service will act as a neutral third-party that will safely hold and process the funds.
+
+Some selling platforms like Sedo have a built-in escrow process for every transaction done through the site. This will take a percentage of the final price, but safeguarding your domain is well worth it.
+</p>
+<h3>
+6. Transfer the Domain:
+</h3>
+<p>
+Finally, it’s time to transfer your domain to the new owner. The process you use will differ depending on how you decided to sell your site.
+
+However, the general process is outlined below:
+
+1.The seller will submit the authorization code to start the transfer process.
+2.The seller will them transfer the funds from escrow once the transfer is completed.
+3.There might be restrictions on the amount of time the funds must stay in escrow, so double check this before you initiate the transfer.
+
+Learning how to sell a domain name is a lengthy process, but one that could be potentially financially rewarding. Hopefully, the tips above have given you some guidance on evaluating your own domain names, and maybe even selling a few of them.
+</p>
+<h2>
+What Is Domain Cash Parking:
+</h2>
+<p>
+You can earn money with your unused domains and sell them even quicker. Domain Parking is completely free of charge! The idea is simple: Advertisements which thematically correspond to the domain name will be displayed on your domain. You will earn money whenever a visitor clicks on the advertising links.
+</p>
+<h2>
+Which is the best website for domain parking to earn money with high revenue?
+</h2>
+<h3>
+There Are So Many Websites For Cash Parking Like:
+<h3>
+<p>
+1. Godaddy.com
+2. Sedo.com
+3. Bodis.com
+4. Voodoo.com
+5. Flippa.com
+</p>
+</div>
+</div>
+<div class="overlay" id="03" onclick="off(id)">
+   <div class="overlaytext" ><br><br><br><br>
+</div>
+</div>
+
+<div class="overlay" id="05" onclick="off(id)">
+   <div class="overlaytext" ><br><br><br><br>                    <h1>     ONLINE TRADING.</h1><p>
+Investing is very much essential these days as savings alone is not adequate to fulfill all our financial goals and also to beat inflation. There are several investment options available and you can choose them as per your needs and convenience.
+Trading in the stock market has become less time consuming these days as you can trade all by yourself without the assistance of a broker by means of online trading.
+Just like shopping for groceries online, you can buy and sell stocks online. You need not be an expert to begin online trading as these trading platforms are user friendly and do not necessitate any special learning. Mobile trading apps have even made things easier for an investor or trader as you can carry out any transaction in the stock market through your smartphone itself. You can trade from anywhere anytime through the mobile trading app.</p><p>
+Online trading can be done by simply opening a demat and trading account with any SEBI registered broker. Account opening can be done in a matter of 15 minutes. The documents required to open an account are PAN card, address proof, AADHAAR card, mobile number linked to AADHAAR, bank statement, cancelled cheque leaf and passport photograph.</p>
+<ul>
+
+The Advantages of Online Trading are:
+<li>	Its Simple</li>
+<li>	It is Less Expensive</li>
+<li>	Quick & less time consuming.</li>
+<li>	Complete Control</li>
+<li>	Chances of Error is less</li>
+<li>	Monitor Investment All time</li>
+
+</ul>
+</div>
+</div>
+
+<div class="overlay" id="06" onclick="off(id)">
+   <div class="overlaytext" ><br><br><br><br>
+</div>
+</div>
+<div class="overlay" id="07" onclick="off(id)">
+   <div class="overlaytext" ><br><br><br><br>
+</div>
+</div>
+<div class="overlay" id="08" onclick="off(id)">
+   <div class="overlaytext" ><br><br><br><br>
+</div>
+</div>
+<div class="overlay" id="09" onclick="off(id)">
+   <div class="overlaytext" ><br><br><br><br>
+</div>
+</div>
+<div class="overlay" id="10" onclick="off(id)">
+   <div class="overlaytext" ><br><br><br><br>
+</div>
+</div>
+<div class="overlay" id="11" onclick="off(id)">
+   <div class="overlaytext" ><br><br><br><br><h1>
+REAL ESTATE
+</h1>
+<h2> 
+What Is Real Estate
+</h2>
+<p>
+"Real estate"is property consisting of land and the buildings on it, along with its natural resources such as crops, minerals or water, immovable property of this nature; an interest vested in this (also) an item of real property, (more generally) buildings or housing in general. Also: the business of real estate; the profession of buying, selling,renting land, buildings, or housing. It is a legal term used in jurisdictions whose legal system is derived from English common law, such as India, England, Wales, Northern Ireland, United States, Canada, Pakistan, Australia, and New Zealand.
+</p>
+<h2>
+The Big Three Property Investment Types:
+</h2>
+<h3>
+1. Vacant Land
+</h3>
+<p>
+Many people looking to create instant equity turn to buying up vacant land on the fringe of the urban growth boundary (UGB) or rezoned areas. The UGB is the boundary the government sets to control development growth. Vacant land might also be infill areas that have the potential for subdivisions.
+
+Unfortunately, buying vacant land requires a lot of skill and knowledge to ensure you succeed; often far more skill and knowledge than it takes to build a simple portfolio.
+
+The main disadvantage of purchasing raw land is that there is no rental income (unless your land is primary producing, meaning farm land). This makes it difficult to support loan repayments.
+
+Many people buy vacant land as their one big score, hoping to put a big development on it. What people don’t appreciate is that there are risks associated with every step. You need specific industry knowledge to ensure you succeed in this area. Development is a trade on its own. There’s little room for error when conducting a due diligence (DD) and feasibility on a site.
+
+Although land subdivision and development are a large part of my life nowadays, you don’t need development to build a strong portfolio. Remember, development is not a passive investment strategy; its main purpose is to be income producing. Development is a profession, not an investment strategy.
+</p>
+<h3>
+2. Commercial Property
+</h3>
+<p>
+Commercial property investments cover nearly every property that houses business operations; for example, offices, industrial (factories) or retail.
+
+Here at OpenCorp, we’ve built a separate portfolio for commercial property, along with managing syndicated funds that hold commercial property developments. With a number of these types of projects underway, we’ve found commercial and industrial property to be solid asset types.
+</p>
+<h2>
+Advantages of Commercial Properties?
+</h2>
+<h3>
+Commercial properties have two main advantages over residential property:
+</h3>
+<p>
+<br>
+1.It’s easier to find a commercial property that, once tenanted, is positive in cash flow and still has strong growth potential.
+Be aware that commercial property cycles move differently to those of residential cycles and have slightly different factors that affect these cycles.
+</br>
+<br>
+2.The tenant has the responsibility to maintain the property. Basically, all you provide is a vacant shell and they fit out the building and then ‘make good’, which simply means the tenant must bring the property back to a clean vacant shell at the end of the tenancy.
+</br>
+</p>
+<h2>
+Disadvantages of Investing in Commercial Properties?
+</h2>
+<h3>
+There are three main reasons why I strongly recommend you leave commercial property alone to begin with:
+</h3>
+<P>
+<br>
+<h3>
+1.Tenant stability and vacancy rate:
+</h3>
+Your tenant is only as stable as the industry they’re in and then only as stable as the people running that particular business.
+
+Ensure that you take a good look at the financials of anyone wanting to lease your property. Taking this into account, ensure that you understand business financials or get your accountant to review them for you. Be very aware of the failure rate of start-up businesses when considering a tenant.
+</br>
+<br>
+<h3>
+2.Valuation assessment:
+</h3>
+Commercial property is valued predominantly on a calculation of its rental yield. This being the case, it’s very difficult to reduce the asking rental price to entice new tenants, as you would incur a drop in the property’s valuation.
+
+There are likely to be long periods of time between tenants. Six months is not uncommon. Remembering our reliance on rental yields when building an initial portfolio, you may find it difficult to afford to have such a large valued property sitting vacant with no rental income.
+
+Expect a serious decrease in value when interest rates rise and the demand for commercial property softens. Be prepared for this, keep your gearing low (that is, try to keep a lower amount of borrowing against the property), and have enough cash available to service your debt. Be prepared if the banks come knocking asking for some of their money back if prices drop.
+</br>
+<br>
+<h3>
+3.Finance:
+</h3>
+Banks realise that commercial property is a higher risk investment than residential property. Therefore they usually only lend at around 60–75% of the value of the property. This means a much larger deposit is required to purchase.
+
+Investing in commercial property is a higher risk than residential, which is important to remember when your initial wealth building strategy is all about minimising risk.
+
+Ensure you consider yourself a smart investor in the residential space before you start to learn the factors that affect commercial.
+</br>
+</p>
+<h3>
+Here's a list of the top players in the real estate market:
+</h3>
+<P>
+<br>
+1.DLF
+</br>
+<br>
+2.Unitech real estate
+</br>
+<br>
+3.Supertech
+</br>
+<br>
+4.Omaxe
+</br>
+<br>
+5.Oberoi Realty
+</br>
+<br>
+6.Ansal API
+</br>
+<br>
+7.Jaypee Infatech
+</br>
+<br>
+8.Godrej Properties
+</br>
+</p>
+</div>
+</div>
+
+
+<div style="background-color:white">
+
+<div class="card" id="c01" >
+  <img src="cash1.jpg" alt="Stock Market" style="width:100%">
+  <h1 >Stock Market </h1>
+  <p class="About">FREE COURSE</p>
+  <p>free Course</p>
+  <p><button id="01" onclick="on(id)">Let's Start</button></p>
+
+</div>
+<div class="card" id="c02">
+  <img src="cash1.jpg" alt="Domains buy and sell" style="width:100%">
+  <h1>Domains buy and sell</h1>
+  <p class="About">FREE Course</p>
+  <p>Some text about the Course..</p>
+  <p><button id="02" onclick="on(id)">Let's Start</button></p>
+
+</div>
+<div class="card" id="c03">
+  <img src="cash1.jpg" alt="Youtube" style="width:100%">
+  <h1>Youtube</h1>
+  <p class="About">FREE Course</p>
+  <p>Some text about the Course..</p>
+  <p><button id="03" onclick="on(id)">Let's Start</button></p>
+
+</div>
+<div class="card" id="c04">
+  <img src="cash1.jpg" alt="Affiliate Marketing" style="width:100%">
+  <h1>Affiliate Marketing</h1>
+  <p class="About">FREE Course</p>
+  <p>Some text about the Course..</p>
+  <p><button id="04" onclick="on(id)">Let's Start</button></p>
+
+</div>
+<div class="card" id="c05">
+  <img src="cash1.jpg" alt="Online Marketing" style="width:100%">
+  <h1>Online Marketing</h1>
+  <p class="About">FREE Course</p>
+  <p>Some text about the Course..</p>
+  <p><button id="05" onclick="on(id)">Let's Start</button></p>
+
+</div>
+<div class="card" id="c06">
+  <img src="cash1.jpg" alt="Freelancing" style="width:100%">
+  <h1>Freelancing</h1>
+  <p class="About">FREE Course</p>
+  <p>Some text about the Course..</p>
+  <p><button id="06" onclick="on(id)">Let's Start</button></p>
+
+</div>
+<div class="card" id="c08">
+  <img src="cash1.jpg" alt="Tutor Students" style="width:100%">
+  <h1>Tutor Students</h1>
+  <p class="About">FREE Course</p>
+  <p>Some text about the Course..</p>
+  <p><button id="09" onclick="on(id)">Let's Start</button></p>
+
+</div>
+<div class="card" id="c09">
+  <img src="cash1.jpg" alt="Websites" style="width:100%">
+  <h1>Websites</h1>
+  <p class="About">FREE Course</p>
+  <p>Some text about the Course..</p>
+  <p><button id="10" onclick="on(id)">Let's Start</button></p>
+
+</div>
+<div class="card" id="c07">
+  <img src="cash1.jpg" alt="Clixaddo Referral Program" style="width:100%">
+  <h1>Clixaddo and Referral Program</h1>
+  <p class="About">FREE Course</p>
+  <p>Some text about the Course..</p>
+  <p><button id="07" onclick="on(id)">Let's Start</button></p>
+
+</div>
+<div class="card" id="c10">
+  <img src="cash1.jpg" alt="Make money Online" style="width:100%">
+  <h1>Make money Online</h1>
+  <p class="About">FREE Course</p>
+  <p>Some text about the Course..</p>
+  <p><button id="10" onclick="on(id)">Let's Start</button></p>
+
+</div>
+<div class="card" id="c11">
+  <img src="cash1.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Real Estate</h1>
+  <p class="About">FREE Course</p>
+  <p>Some text about the Course..</p>
+  <p><button id="11" onclick="on(id)">Let's Start</button></p>
+
+</div>
+<div class="card" id="c12">
+  <img src="cash1.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>method </h1>
+  <p class="About">FREE Course</p>
+  <p>Some text about the Course..</p>
+  <p><button id="12" onclick="on(id)">Let's Start</button></p>
+
+</div>
+
+
+</div>
+
+<div class="special"><br><hr>
+
+<h1 style="color:black">Let's Invest Some</h1>
+</div>
+
+<div class="major">
+<br>
+<h2 id="jobandsavings" ><br>Jobs and Savings</h2>
+<br>
+<p> text area jjjjjjjjjjjjjjjjde djendjedejde dnjendednede ndenkdedekdmekd kenkdnednkede dkndkendkede dkndekdnekd dkendnedked  dnkednekdked knedkedekdned dj dkendkedne jdkdnkd</p>
+</div>
+
+<div class="special">
+ <h1 style="color:black"> Let's Save Some Cash</h1></div>
+<div class="major">
+<h2 id="savings" ><br>Savings</h2>
+<p> text area jjjjjjjjjjjjjjjjde djendjedejde dnjendednede ndenkdedekdmekd kenkdnednkede dkndkendkede dkndekdnekd dkendnedked  dnkednekdked knedkedekdned dj dkendkedne jdkdnkd</p>
+<div>
+<br>
+<div class="footer" >
+
+<p> Money Kamao </p>
+
+ <p>Be connected</p>
+
+<br>
+
+
+  <a href="#" class="facebook" id="iconbar"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter" id="iconbar"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google" id="iconbar"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin" id="iconbar"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube" id="iconbar"><i class="fa fa-youtube"></i></a> 
+
+</div>
+
+</body>
+</html>
